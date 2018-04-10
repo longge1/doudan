@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul{
+            width:1500px;
+            margin:50px auto;
+        }
+        li{
+            list-style: none;
+            height:200px;
+            background-color: #06f;
+            font-size: 40px;
+            color:#fff;
+            text-align:center;
+            line-height:200px;
+        }
+        .top{
+            height:800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+
+    </div>
+    <ul >
+        <li class="abc" data-move="200px,300px" data-perspective="10px">1</li>
+        <li class="abc" data-rotate-y="90deg" data-perspective="10px">2</li>
+        <li class="abc" data-offset="50%" data-perspective="10px">3</li>
+        <li class="abc" data-rotate="-90deg" data-perspective="10px">4</li>
+        <li class="abc" data-scale="3" data-perspective="500">4</li>
+        <li class="abc" data-skew-x="45deg" data-perspective="50px" >6</li>
+    </ul>
+</body>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smoove.js"></script>
+    <script >
+        <!--验证jquery是否导入进来了-->
+        // alert($);
+        $(".abc").smoove(
+            // {
+            //     'offset':'10%';
+            // }
+        );
+    </script>
+</html>

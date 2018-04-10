@@ -1,0 +1,79 @@
+<!doctype html>		<!--文档头信息：文档类型 HTML (H5标准)-->
+<html lang="en">	<!--html根标签 -->
+	<head>			<!--网页头部 开始-->	
+	  <meta charset="UTF-8">	<!-- 字符编码:UTF-8 -->
+	  <meta name="Keywords" content="关键词 搜索引擎抓取">
+	  <meta name="Description" content="网站简介 描述">
+	  <link rel="stylesheet" href="css/jquery.fullPage.css" media="all">
+	  <title>43期VIP</title>	<!--网站标题-->
+	  <style>
+	  *{margin:0;padding:0;}
+	  li{
+		text-align: center;	
+	  
+	  }
+	  ol{
+		position: fixed;
+		z-index:999;
+		top:0;
+		background-color: #ccc;
+
+		width:100%;
+	  }
+	  ol li{display:inline-block;}
+	   ol li.active a{ 
+		display:inline-block;
+		background-color: red;
+		color:#fff;
+	   }
+	  ol li a{
+		  display:block;
+		  padding:10px;
+		  border:1px solid #ccc;
+		  border-radius:5px;
+		  background-color: #fff;
+		  text-decoration:none;
+	  }
+
+	  </style>
+	</head>			
+	<body >			<!--网页主体:可视化区域 -->
+	<ol id="menu">
+		<li data-menuanchor='anchor1'><a href="#anchor1">anchor1</a></li>
+		<li data-menuanchor='anchor2'><a href="#anchor2">anchor2</a></li>
+		<li data-menuanchor='anchor3'><a href="#anchor3">anchor3</a></li>
+		<li data-menuanchor='anchor4'><a href="#anchor4">anchor4</a></li>
+		<li data-menuanchor='anchor5'><a href="#anchor5">anchor5</a></li>
+	
+	</ol>	
+	<ul id='fullpage'>
+		<li class="section fp-auto-height">1</li>
+		<li class="section " >2</li>
+		<li class="section">3</li>
+		<li class="section">4</li>
+		<li class="section">5</li>
+	
+	</ul>	
+	</body>	
+	<script src='js/jquery.min.js'></script>
+	<script src='js/jquery.fullPage.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#fullpage').fullpage({
+				sectionsColor:['#0099cc','#663333','#006600','#6a8cd2','#7207ab'],
+				menu:'#menu',
+				anchors:['anchor1','anchor2','anchor3','anchor4','anchor5'],
+				navigation:true,
+				navigationColor:'#fff',
+			
+			
+			})
+			
+		})
+	
+	
+	
+	</script>
+	
+	
+</html>

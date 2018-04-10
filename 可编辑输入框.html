@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;}
+        #wrap ul{
+            list-style: none;
+        }
+        #wrap ul li{
+            height:30px;
+            padding:10px 0 0 50px;
+            /*text-indent:30px;*/
+            border-bottom: 1px solid #000;
+            font-size:12px;
+            line-height:30px;
+
+        }
+        #wrap ul li p{
+            width:80px;
+            height:28px;
+            background-color: black;
+            line-height: 28px;
+            text-align: center;
+            color: #ffffff;
+            float:left;
+            cursor:pointer;
+        }
+        #wrap ul li span,#wrap ul li input{
+            float:left;
+            margin-right: 10px;
+            color:#ff6600;
+        }
+        #wrap ul li span{
+            display:none;
+        }
+        #wrap ul li.active span{
+            diplay:block;
+        }
+        #wrap ul li.active input{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li><span>请修改里面的内容</span><input type="text" value="请输入修改的内容"><p>点击修改</p></li>
+            <li><span>请修改里面的内容</span><input type="text" value="请输入修改的内容"><p>点击修改</p></li>
+            <li><span>请修改里面的内容</span><input type="text" value="请输入修改的内容"><p>点击修改</p></li>
+            <li><span>请修改里面的内容</span><input type="text" value="请输入修改的内容"><p>点击修改</p></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" media="all">
+    <style>
+        *{margin:0;padding:0;}
+        li{text-align: center;}
+        /*ul{*/
+            /*!*font-size:100px;*!*/
+            /*!*text-align:center;*!*/
+            /*!*line-height:200px;*!*/
+            /*!*margin:200px auto;*!*/
+        /*}*/
+        ol{
+            position:fixed;
+            top:0;
+            z-index:999;
+            background-color: #eeeeee;
+            width:100%;
+        }
+        ol li{
+            display:inline-block;
+        }
+        ol li a{
+            display: block;
+            text-decoration: none;
+            border:1px solid #ccc;
+            border-radius:5px;
+            padding:8px;
+            font-size:20px;
+            font-weight: bold;
+            background-color: #ffffff;
+            color:#000;
+        }
+        ol li.active a{
+            background-color:darkred;
+
+        }
+        ol li.active a{
+            color:#fff;
+        }
+        /*.img1{*/
+            /*background-image: url("imgs/bg1.jpg");*/
+        /*}*/
+        .img2{
+            background-image: url("imgs/bg2.jpg");
+        }
+        .img3{
+            background-image: url("imgs/bg3.jpg");
+        }
+        .img4{
+            background-image: url("imgs/bg4.jpg");
+        }
+        .img5{
+            background-image: url("imgs/bg5.jpg");
+        }
+        ul li{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #video{
+            width:100%;
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
+            object-fit:cover;
+        }
+        .img1{
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <ol id="menu">
+        <li data-menuanchor="anchor1"><a href="#anchor1">sec1</a></li>
+        <li data-menuanchor="anchor2"><a href="#anchor2">sec2</a></li>
+        <li data-menuanchor="anchor3"><a href="#anchor3">sec3</a></li>
+        <li data-menuanchor="anchor4"><a href="#anchor4">sec4</a></li>
+        <li data-menuanchor="anchor5"><a href="#anchor5">sec5</a></li>
+    </ol>
+    <ul id="fullpage" >
+        <li class="section img1">
+            <video id="video" loop data-autoplay>
+                <source src="imgs/flowers.mp4" type="video/mp4"></source>
+            </video>
+        </li>
+        <li class="section img2">
+            <!--<div class="slide">sec1</div>-->
+            <!--<div class="slide">sec2</div>-->
+            <!--<div class="slide">sec3</div>-->
+        </li>
+        <li class="section img3">
+            sec3
+        </li>
+        <li class="section img4">
+            sec4
+        </li>
+        <li class="section img5">
+            sec5
+        </li>
+    </ul>
+</body>
+<!--<script src="css/jquery.fullPage.css"></script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#fullpage').fullpage({
+             slidesColor:['#0099cc','#663333','#006600'],
+             sectionsColor:['#0099cc','#663333','#006600'],
+
+            menu:'#menu',
+            anchors:['anchor1','anchor2','anchor3','anchor4','anchor5'],
+            navigation:true,
+            // navigationColor:'#fff',
+            //  navigationPosition:'left',
+            continuousVertical:true,
+
+            // autoScrolling:false,
+            css3:false,
+            }
+        );
+    })
+    // alert($);
+</script>
+</html>

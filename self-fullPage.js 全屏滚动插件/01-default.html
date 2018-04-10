@@ -1,0 +1,43 @@
+<!doctype html>		<!--文档头信息：文档类型 HTML (H5标准)-->
+<html lang="en">	<!--html根标签 -->
+	<head>			<!--网页头部 开始-->	
+	  <meta charset="UTF-8">	<!-- 字符编码:UTF-8 -->
+	  <meta name="Keywords" content="关键词 搜索引擎抓取">
+	  <meta name="Description" content="网站简介 描述">
+	  <link rel="stylesheet" href="css/jquery.fullPage.css" media="all">
+	  <title>43期VIP</title>	<!--网站标题-->
+	  <style>
+	  *{margin:0;padding:0;}
+	  li{
+		text-align: center;	
+	  
+	  }
+	  </style>
+	</head>			
+	<body >			<!--网页主体:可视化区域 -->	
+	<ul id='fullpage'>
+		<li class="section">1</li>
+		<li class="section">2</li>
+		<li class="section">3</li>
+		<li class="section">4</li>
+		<li class="section">5</li>
+	
+	</ul>	
+	</body>	
+	<script src='js/jquery.min.js'></script>
+	<script src='js/jquery.fullPage.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('#fullpage').fullpage({
+				sectionsColor:['#0099cc','#663333','#006600','#6a8cd2','#7207ab'],
+			
+			
+			})
+		})
+	
+	
+	
+	</script>
+	
+	
+</html>
